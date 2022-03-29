@@ -1,0 +1,10 @@
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins-Black.ttf");
+}
+
+html {
+    font-family: 'Poppins';
+    color: slateblue;
+    font-size: 12px;
+}
