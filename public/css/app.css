@@ -11,21 +11,39 @@ html, body {
   height: 40px;
   width: auto;
   background-color: #222;
-  font-family: Poppins-Regular;
+  font-family: Poppins-Regular, sans-serif;
   font-size: 12px;
 }
-.top-bar a:link {
+.top-bar .grid {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 10px 0 10px;
+  max-width: 1350px;
+  min-width: 200px;
+  display: grid;
+  grid-template-columns: minmax(250px, 70%) auto auto auto auto;
+  color: #b2b2b2;
+}
+.top-bar .grid div {
+  padding: 11px 10px 11px 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.top-bar .grid .grid-one {
+  text-align: left;
+  padding: 11px 0 11px 0;
+}
+.top-bar .grid a:link {
   text-decoration: none;
 }
-.top-bar a:visited {
+.top-bar .grid a:visited {
   text-decoration: none;
   color: #b2b2b2;
 }
-.top-bar a:active {
+.top-bar .grid a:active {
   text-decoration: none;
   color: #6c7ae0;
 }
-.top-bar a:hover {
+.top-bar .grid a:hover {
   color: #6c7ae0;
 }
 

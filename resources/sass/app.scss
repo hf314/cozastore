@@ -1,7 +1,8 @@
 $dark: #222;
-$links-visited: #b2b2b2;
-$links-active: #6c7ae0;
-$links-hover: #6c7ae0;
+$n-f-text: #b2b2b2;
+$n-f-links-visited: #b2b2b2;
+$n-f-links-active: #6c7ae0;
+$n-f-links-hover: #6c7ae0;
 
 
 
@@ -23,20 +24,41 @@ html, body {
     height: 40px;
     width: auto;
     background-color: $dark;
-    font-family: Poppins-Regular;
+    font-family: Poppins-Regular, sans-serif;
     font-size: 12px;
 
-    //text settings
+    // top-bar grid
+    .grid {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 10px 0 10px;
+        max-width: 1350px;
+        min-width: 200px;
+        display: grid;
+        grid-template-columns: minmax(250px, 70%) auto auto auto auto;
+        color: $n-f-text;
 
-    a:link {text-decoration: none;}
-    a:visited { text-decoration: none; color: $links-visited;}
-    a:active { text-decoration: none; color: $links-active;}
-    a:hover {color: $links-active;}
+        div {
+            padding: 11px 10px 11px 10px;
+            border-right: 1px solid rgba(255,255,255,0.3);
+        }
+        .grid-one {
+            text-align: left;
+            padding: 11px 0 11px 0;
+        }
+
+        //top-bar text and links
+        a:link {text-decoration: none;}
+        a:visited { text-decoration: none; color: $n-f-links-visited;}
+        a:active { text-decoration: none; color: $n-f-links-active;}
+        a:hover {color: $n-f-links-active;}
+    }
 }
 
 
 
 // ----- home.blade.php -----
+
 .home {
     color: black;
 }
