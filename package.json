@@ -11,6 +11,12 @@
     },
     "devDependencies": {
         "laravel-mix": "^6.0.6",
-        "postcss": "^8.1.14"
+        "postcss": "^8.1.14",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.49.9",
+        "sass-loader": "^12.6.0"
+    },
+    "dependencies": {
+        "bootstrap": "^5.1.3"
     }
 }

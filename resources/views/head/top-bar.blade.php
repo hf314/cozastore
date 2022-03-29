@@ -1,10 +1,26 @@
-<!<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!doctype html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}" type="text/css">
-    <title>Coza Store - Home</title>
+    <title>Document</title>
 </head>
-<h1>Home</h1>
+<body>
+
+<div class="top-bar">
+    <div class="grid">
+        <a href="#"><div>Free shipping for standard order over $100</div></a>
+        <a href="#"><div>Help & FAQs</div></a>
+        <a href="#"><div>My Account</div></a>
+        <a href="#"><div>EN</div></a>
+        <a href="#"><div>USD</div></a>
+    </div>
+</div>
+
+@yield('main-content')
+
 </body>
 </html>

@@ -1,9 +1,0 @@
-@font-face {
-    font-family: Poppins;
-    src: url("public/fonts/Poppins-Bold.ttf");
-}
-
-html {
-    font-family: 'Poppins', sans-serif;
-    color: blue;
-}
