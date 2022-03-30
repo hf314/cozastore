@@ -1,7 +1,6 @@
 $dark: #222;
 $n-f-text: #b2b2b2;
 $n-f-links-visited: #b2b2b2;
-$n-f-links-active: #6c7ae0;
 $n-f-links-hover: #6c7ae0;
 
 
@@ -37,21 +36,32 @@ html, body {
         display: grid;
         grid-template-columns: minmax(250px, 70%) auto auto auto auto;
         color: $n-f-text;
+        text-decoration: none;
 
-        div {
-            padding: 11px 10px 11px 10px;
-            border-right: 1px solid rgba(255,255,255,0.3);
-        }
         .grid-one {
             text-align: left;
             padding: 11px 0 11px 0;
         }
 
+        div {
+            padding: 11px 10px 11px 10px;
+            border-right: 1px solid rgba(255,255,255,0.3);
+        }
+
         //top-bar text and links
-        a:link {text-decoration: none;}
-        a:visited { text-decoration: none; color: $n-f-links-visited;}
-        a:active { text-decoration: none; color: $n-f-links-active;}
-        a:hover {color: $n-f-links-active;}
+        a:link {
+            text-decoration: none;
+            color: $n-f-links-visited;
+        }
+        a:visited {
+            text-decoration: none;
+            color: $n-f-links-visited;
+        }
+        a:hover {
+            text-decoration: none;
+            color: $n-f-links-hover;
+            transition: color 0.4s;
+        }
     }
 }
 

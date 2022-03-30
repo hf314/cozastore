@@ -23,28 +23,28 @@ html, body {
   display: grid;
   grid-template-columns: minmax(250px, 70%) auto auto auto auto;
   color: #b2b2b2;
-}
-.top-bar .grid div {
-  padding: 11px 10px 11px 10px;
-  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  text-decoration: none;
 }
 .top-bar .grid .grid-one {
   text-align: left;
   padding: 11px 0 11px 0;
 }
+.top-bar .grid div {
+  padding: 11px 10px 11px 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
 .top-bar .grid a:link {
   text-decoration: none;
+  color: #b2b2b2;
 }
 .top-bar .grid a:visited {
   text-decoration: none;
   color: #b2b2b2;
 }
-.top-bar .grid a:active {
+.top-bar .grid a:hover {
   text-decoration: none;
   color: #6c7ae0;
-}
-.top-bar .grid a:hover {
-  color: #6c7ae0;
+  transition: color 0.4s;
 }
 
 .home {

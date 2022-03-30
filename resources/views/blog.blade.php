@@ -1,11 +1,24 @@
-<!<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+@extends('head.top-bar')
+
+    <!doctype html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}" type="text/css">
     <title>Coza Store - Blog</title>
 </head>
 <body>
-<h1>Blog</h1>
+
+@section('main-content')
+
+    <div class="home">
+        <h1>Blog</h1>
+    </div>
+
+@endsection
+
 </body>
 </html>
