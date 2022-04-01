@@ -1,0 +1,10 @@
+@extends('layouts.app')
+@section('top')
+    @include('head.top-bar')
+@endsection
+@section('nav')
+    @include('head.nav-bar')
+@endsection
+@section('content')
+    <h1>HOME</h1>
+@endsection

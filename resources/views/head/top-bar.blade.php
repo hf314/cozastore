@@ -1,4 +1,4 @@
-
+@section('top')
 <div class="top-bar">
     <div class="grid">
         <div class="grid-one">Free shipping for standard order over $100</div>
@@ -8,5 +8,4 @@
         <a href="#"><div>USD</div></a>
     </div>
 </div>
-
-@yield('top-bar')
+@endsection
