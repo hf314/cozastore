@@ -10,15 +10,8 @@
 </head>
 <body>
 
-@extends('head.top-bar')
-@extends('head.nav-bar')
-
-@section('top-bar')
-    top
-@endsection
-@section('nav-bar')
-nav
-@endsection
+@include('head.top-bar')
+@include('head.nav-bar')
 <div class="home">
     <h1>HOME</h1>
 </div>
