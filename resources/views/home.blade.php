@@ -1,5 +1,3 @@
-@extends('head.top-bar')
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,13 +10,17 @@
 </head>
 <body>
 
-@section('main-content')
+@extends('head.top-bar')
+@extends('head.nav-bar')
 
-    <div class="home">
-        <h1>Home</h1>
-    </div>
-
+@section('top-bar')
+    top
 @endsection
-
+@section('nav-bar')
+nav
+@endsection
+<div class="home">
+    <h1>HOME</h1>
+</div>
 </body>
 </html>

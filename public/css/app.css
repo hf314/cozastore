@@ -47,6 +47,14 @@ html, body {
   transition: color 0.4s;
 }
 
+.nav-bar {
+  padding: 0;
+  margin: 0;
+  background-color: aquamarine;
+  height: 70px;
+  width: auto;
+}
+
 .home {
-  color: black;
+  color: red;
 }

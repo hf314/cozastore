@@ -1,3 +1,4 @@
+
 <div class="top-bar">
     <div class="grid">
         <div class="grid-one">Free shipping for standard order over $100</div>
@@ -8,4 +9,4 @@
     </div>
 </div>
 
-@yield('main-content')
+@yield('top-bar')
