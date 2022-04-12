@@ -2,12 +2,18 @@ $dark: #222;
 $n-f-text: #b2b2b2;
 $n-f-links-visited: #b2b2b2;
 $n-f-links-hover: #6c7ae0;
+$nav-dark: #333333;
 
 
 
 @font-face {
     font-family: Poppins-Regular;
     src: url("../../public/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url("../../public/fonts/Poppins-Medium.ttf");
 }
 
 html, body {
@@ -26,8 +32,8 @@ html, body {
     font-family: Poppins-Regular, sans-serif;
     font-size: 12px;
 
-    // top-bar grid
-    .grid {
+    // top-bar-grid
+    .top-bar-grid {
         text-align: center;
         margin: 0 auto;
         padding: 0 10px 0 10px;
@@ -52,15 +58,15 @@ html, body {
         a:link {
             text-decoration: none;
             color: $n-f-links-visited;
+            transition: color 0.7s;
         }
+
         a:visited {
-            text-decoration: none;
             color: $n-f-links-visited;
         }
+
         a:hover {
-            text-decoration: none;
             color: $n-f-links-hover;
-            transition: color 0.4s;
         }
     }
 }
@@ -72,9 +78,75 @@ html, body {
 .nav-bar {
     padding: 0;
     margin: 0;
-    background-color: aquamarine;
-    height: 70px;
+    height: 69px;
     width: auto;
+
+    //nav-bar grid
+    .nav-bar-grid{
+        height: 69px;
+        padding: 0 10px 0 10px;
+        margin: 0 auto;
+        max-width: 1350px;
+        min-width: 200px;
+        display: grid;
+        grid-template-columns: 133px 50px auto auto auto auto auto auto minmax(auto, 45%) auto auto auto;
+        color: $n-f-text;
+        text-decoration: none;
+
+        div {
+            display: block;
+            padding: 0;
+            margin: 0;
+            height: auto;
+            width: auto;
+
+            //nav-bar text and links
+            a:link {
+                text-decoration: none;
+                color: $dark;
+                transition: color 0.7s;
+            }
+
+            a:visited {
+                text-decoration: none;
+                color: $dark;
+            }
+
+            a:hover {
+                text-decoration: none;
+                color: $n-f-links-hover;
+            }
+
+            p {
+                padding: 0;
+                margin: 25px 15px 25px 15px;
+                text-align: center;
+                font-family: Poppins-Medium, sans-serif;
+                font-size: 14px;
+                color: $nav-dark;
+            }
+        }
+
+        //nav-bar logos
+        .logo img {
+            vertical-align: middle;
+            max-width: 133px;
+            max-height: 17px;
+            padding: 26px 0 26px 0;
+        }
+
+        .search img {
+            padding: 23px 0 0 0;
+        }
+
+        .shopping-cart {
+            padding: 23px 35px 0 35px;
+        }
+
+        .heart {
+            padding: 23px 0 0 0;
+        }
+    }
 }
 
 

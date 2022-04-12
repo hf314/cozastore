@@ -6,14 +6,22 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}" type="text/css">
+    <link type="image/x-icon" rel="shortcut icon" href="{{asset('images/icons/favicon.png')}}">
     <title>Coza Store - Home</title>
 </head>
 <body>
 
+{{--top-bar--}}
 @include('head.top-bar')
+
+{{--head-bar--}}
 @include('head.nav-bar')
+
+{{--content--}}
 <div class="home">
     <h1>HOME</h1>
+    <a href=""><div class="search"></div></a>
 </div>
+
 </body>
 </html>
