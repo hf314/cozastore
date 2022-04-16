@@ -98,18 +98,50 @@ html, body {
   vertical-align: middle;
   max-width: 133px;
   max-height: 17px;
-  padding: 26px 0 26px 0;
+  padding: 0;
+  margin: 26px 0 26px 0;
 }
-.nav-bar .nav-bar-grid .search img {
-  padding: 23px 0 0 0;
+.nav-bar .nav-bar-grid a .s-img {
+  padding: 0;
+  margin: 23px 0 0 0;
+  width: 24px;
+  height: 24px;
+  background: url("/images/icons/icon-search-gray.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav-bar .nav-bar-grid a .s-img:hover {
+  background: url("/images/icons/icon-search-blue.png");
 }
 .nav-bar .nav-bar-grid .shopping-cart {
-  padding: 23px 35px 0 35px;
+  padding: 0 35px 0 35px;
 }
-.nav-bar .nav-bar-grid .heart {
-  padding: 23px 0 0 0;
+.nav-bar .nav-bar-grid a .s-c-img {
+  padding: 0;
+  margin: 23px 0 0 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("/images/icons/icon-shopping-cart-gray.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.7s;
 }
-
-.home {
-  color: black;
+.nav-bar .nav-bar-grid a .s-c-img:hover {
+  background-image: url("/images/icons/icon-shopping-cart-blue.png");
+}
+.nav-bar .nav-bar-grid a .h-img {
+  padding: 0;
+  margin: 23px 0 0 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("/images/icons/icon-heart-gray.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.7s;
+}
+.nav-bar .nav-bar-grid a .h-img:hover {
+  background-image: url("/images/icons/icon-heart-blue.png");
 }

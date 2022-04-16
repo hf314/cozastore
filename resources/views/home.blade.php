@@ -12,15 +12,19 @@
 <body>
 
 {{--top-bar--}}
-@include('head.top-bar')
+<div class="home-top-bar">
+    @include('head.top-bar')
+</div>
 
-{{--head-bar--}}
-@include('head.nav-bar')
+{{--nav-bar--}}
+<div class="home-nav-bar">
+    @include('head.nav-bar')
+</div>
 
 {{--content--}}
 <div class="home">
     <h1>HOME</h1>
-    <a href=""><div class="search"></div></a>
+    <a href=""><div class="back"></div></a>
 </div>
 
 </body>

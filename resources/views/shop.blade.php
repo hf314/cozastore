@@ -1,6 +1,4 @@
-@extends('head.top-bar')
-
-    <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,13 +10,20 @@
 </head>
 <body>
 
-@section('main-content')
+{{--top-bar--}}
+<div class="shop-top-bar">
+    @include('head.top-bar')
+</div>
 
+{{--nav-bar--}}
+<div class="shop-nav-bar">
+    @include('head.nav-bar')
+</div>
+
+{{--content--}}
     <div class="home">
         <h1>Shop</h1>
     </div>
-
-@endsection
 
 </body>
 </html>
