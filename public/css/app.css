@@ -63,7 +63,6 @@ html, body {
   min-width: 200px;
   display: grid;
   grid-template-columns: 133px 50px auto auto auto auto auto auto minmax(auto, 45%) auto auto auto;
-  color: #b2b2b2;
   text-decoration: none;
 }
 .nav-bar .nav-bar-grid div {
@@ -73,14 +72,19 @@ html, body {
   height: auto;
   width: auto;
 }
+.nav-bar .nav-bar-grid div .active a {
+  color: #6c7ae0;
+}
+.nav-bar .nav-bar-grid div .active a:visited {
+  color: #6c7ae0;
+}
+.nav-bar .nav-bar-grid div a:visited {
+  color: #222;
+}
 .nav-bar .nav-bar-grid div a:link {
   text-decoration: none;
   color: #222;
   transition: color 0.7s;
-}
-.nav-bar .nav-bar-grid div a:visited {
-  text-decoration: none;
-  color: #222;
 }
 .nav-bar .nav-bar-grid div a:hover {
   text-decoration: none;
@@ -92,7 +96,6 @@ html, body {
   text-align: center;
   font-family: Poppins-Medium, sans-serif;
   font-size: 14px;
-  color: #333333;
 }
 .nav-bar .nav-bar-grid .logo img {
   vertical-align: middle;

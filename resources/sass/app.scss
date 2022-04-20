@@ -94,7 +94,7 @@ html, body {
         min-width: 200px;
         display: grid;
         grid-template-columns: 133px 50px auto auto auto auto auto auto minmax(auto, 45%) auto auto auto;
-        color: $n-f-text;
+        //color: $n-f-text;
         text-decoration: none;
 
         div {
@@ -105,16 +105,28 @@ html, body {
             width: auto;
 
             //nav-bar text and links
+            .active a {
+                color: $n-f-links-hover;
+            }
+
+            .active a:visited {
+                color: $n-f-links-hover;
+            }
+
+            a:visited {
+                color: $dark;
+            }
+
             a:link {
                 text-decoration: none;
                 color: $dark;
                 transition: color 0.7s;
             }
 
-            a:visited {
-                text-decoration: none;
-                color: $dark;
-            }
+            //a:visited {
+            //    text-decoration: none;
+            //    color: $dark;
+            //}
 
             a:hover {
                 text-decoration: none;
@@ -127,7 +139,6 @@ html, body {
                 text-align: center;
                 font-family: Poppins-Medium, sans-serif;
                 font-size: 14px;
-                color: $nav-dark;
             }
         }
 

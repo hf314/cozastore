@@ -2,26 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'HomeController@home')->name('home');
 
-Route::get('/shop', function () {
-    return view('shop');
-});
+Route::get('/about', 'AboutController@about')->name('about');
 
-Route::get('/features', function () {
-    return view('features');
-});
+Route::get('/blog', 'BlogController@blog')->name('blog');
 
-Route::get('/blog', function () {
-    return view('blog');
-});
+Route::get('/contact', 'ContactController@contact')->name('contact');
 
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/features', 'FeaturesController@features')->name('features');
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/shop', 'ShopController@shop')->name('shop');
