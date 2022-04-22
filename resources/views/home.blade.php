@@ -22,9 +22,8 @@
 </div>
 
 {{--content--}}
-<div class="home">
-    <h1>HOME</h1>
-    <a href=""><div class="back"></div></a>
+<div class="container">
+
 </div>
 
 {{--footer--}}

@@ -21,6 +21,13 @@ html, body {
     margin: 0;
 }
 
+.container {
+    padding: 0;
+    margin: auto;
+    max-width: 1350px;
+    height: max-content;
+}
+
 
 
 
@@ -150,14 +157,14 @@ html, body {
             margin: 23px 0 0 0;
             width: 24px;
             height: 24px;
-            background: url('/images/icons/icon-search-gray.png');
+            background-image: url('/images/icons/icon-search-gray.png');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
 
         a .s-img:hover {
-            background: url('/images/icons/icon-search-blue.png');
+            background-image: url('/images/icons/icon-search-blue.png');
         }
 
         .shopping-cart {
@@ -264,7 +271,7 @@ html, body {
             width: 100%;
 
             > a {
-                width: 0px;
+                width: px;
             }
 
             a .footer-facebook {

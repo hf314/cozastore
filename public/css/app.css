@@ -11,6 +11,15 @@ html, body {
   margin: 0;
 }
 
+.container {
+  padding: 0;
+  margin: auto;
+  max-width: 1350px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .top-bar {
   height: 40px;
   width: auto;
@@ -109,13 +118,13 @@ html, body {
   margin: 23px 0 0 0;
   width: 24px;
   height: 24px;
-  background: url("/images/icons/icon-search-gray.png");
+  background-image: url("/images/icons/icon-search-gray.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .nav-bar .nav-bar-grid a .s-img:hover {
-  background: url("/images/icons/icon-search-blue.png");
+  background-image: url("/images/icons/icon-search-blue.png");
 }
 .nav-bar .nav-bar-grid .shopping-cart {
   padding: 0 35px 0 35px;
@@ -202,7 +211,7 @@ html, body {
   width: 100%;
 }
 .footer .footer-grid .f-logos > a {
-  width: 0px;
+  width: px;
 }
 .footer .footer-grid .f-logos a .footer-facebook {
   padding: 0;

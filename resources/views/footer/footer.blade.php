@@ -33,11 +33,11 @@
         </div>
     </div>
     <div class="payments">
-        <img src="/images/icons/icon-pay-01.png" alt="image">
-        <img src="/images/icons/icon-pay-02.png" alt="image">
-        <img src="/images/icons/icon-pay-03.png" alt="image">
-        <img src="/images/icons/icon-pay-04.png" alt="image">
-        <img src="/images/icons/icon-pay-05.png" alt="image">
+        <a href="#"><img src="/images/icons/icon-pay-01.png" alt="image"></a>
+        <a href="#"><img src="/images/icons/icon-pay-02.png" alt="image"></a>
+        <a href="#"><img src="/images/icons/icon-pay-03.png" alt="image"></a>
+        <a href="#"><img src="/images/icons/icon-pay-04.png" alt="image"></a>
+        <a href="#"><img src="/images/icons/icon-pay-05.png" alt="image"></a>
     </div>
     <div class="copyright">
         <p>Copyright &#169;2022 All rights reserved | Made with &#9825; by <a href="https://colorlib.com/" target="_blank">Colorlib</a> & distributed by <a

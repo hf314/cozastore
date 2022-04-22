@@ -21,11 +21,9 @@
 </div>
 
 {{--content--}}
-    <div class="home">
-        <h1>Shop</h1>
-    </div>
+    <div class="container"></div>
 
 {{--footer--}}
-@include('footer.footer')
+    @include('footer.footer')
 </body>
 </html>
