@@ -25,5 +25,7 @@
         <h1>Shop</h1>
     </div>
 
+{{--footer--}}
+@include('footer.footer')
 </body>
 </html>

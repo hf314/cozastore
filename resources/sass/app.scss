@@ -94,7 +94,6 @@ html, body {
         min-width: 200px;
         display: grid;
         grid-template-columns: 133px 50px auto auto auto auto auto auto minmax(auto, 45%) auto auto auto;
-        //color: $n-f-text;
         text-decoration: none;
 
         div {
@@ -122,11 +121,6 @@ html, body {
                 color: $dark;
                 transition: color 0.7s;
             }
-
-            //a:visited {
-            //    text-decoration: none;
-            //    color: $dark;
-            //}
 
             a:hover {
                 text-decoration: none;
@@ -208,6 +202,185 @@ html, body {
 
 
 
-// ----- home.blade.php -----
+// ----- footer.blade.php -----
 
+.footer {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: auto;
+    background-color: $dark;
 
+    //footer-grid
+    .footer-grid {
+        height: auto;
+        padding: 70px 10px 40px 10px;
+        margin: 0 auto;
+        max-width: 1350px;
+        min-width: 200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-decoration: none;
+
+        h4 {
+            margin: 0;
+            padding: 0 0 30px 0;
+            font-family: Montserrat-Bold, sans-serif;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+
+        p {
+            padding: 0 0 15px 0;
+            margin: 0;
+            font-family: Poppins-Regular, sans-serif;
+            font-size: 13px;
+            color: #b2b2b2;
+            max-width: 80%;
+
+            a {
+                color: #b2b2b2;
+                text-decoration: none;
+                transition: all 0.4s;
+            }
+
+            a:visited {
+                color: #b2b2b2;
+                text-decoration: none
+            }
+
+            a:hover {
+                color: $n-f-links-hover;
+            }
+        }
+
+        //footer_logos
+        .f-logos {
+            display: grid;
+            grid-template-columns: 40px 40px 40px auto;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+
+            > a {
+                width: 0px;
+            }
+
+            a .footer-facebook {
+                padding: 0;
+                margin: 0;
+                width: 20px;
+                height: 20px;
+                background-image: url("/images/icons/footer-facebook-1.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+
+            a .footer-facebook:hover {
+                background-image: url("/images/icons/footer-facebook-2.png")
+            }
+
+            a .footer-instagram {
+                padding: 0;
+                margin: 0;
+                width: 20px;
+                height: 20px;
+                background-image: url("/images/icons/footer-instagram-1.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+
+            a .footer-instagram:hover {
+                background-image: url("/images/icons/footer-instagram-2.png");
+            }
+
+            a .footer-pinterest {
+                padding: 0;
+                margin: 0;
+                width: 20px;
+                height: 20px;
+                background-image: url("/images/icons/footer-pinterest-1.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+
+            a .footer-pinterest:hover {
+                background-image: url("/images/icons/footer-pinterest-2.png");
+            }
+        }
+
+        .form-email {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            color: #b2b2b2;
+            font-family: Poppins-Regular, sans-serif;
+            background: $dark;
+            border-color: #343434;
+            border-width: 0 0 1px 0;
+        }
+
+        .form-email:focus{
+            background: $dark;
+            outline: none;
+            border-color: $n-f-links-hover;
+            border-width: 0 0 1px 0;
+        }
+
+        .form-subscribe {
+            padding: 0;
+            margin: 20px 0 0 0;
+            background-color: $n-f-links-hover;
+            color: #ffffff;
+            min-width: 179px;
+            height: 46px;
+            border-radius: 23px;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            font-family: Poppins-Medium, sans-serif;
+            font-size: 15px;
+            transition: all 0.4s;
+        }
+
+        .form-subscribe:hover {
+            padding: 0;
+            margin: 20px 0 0 0;
+            background-color: #ffffff;
+            color: $n-f-links-hover;
+        }
+    }
+
+    .payments {
+        padding: 0;
+        margin: auto;
+        width: max-content;
+    }
+
+    .copyright {
+        font-family: Poppins-Regular, sans-serif;
+        font-size: 13px;
+        padding: 20px 0 40px 0;
+        margin: auto;
+        width: max-content;
+        color: #888888;
+
+        p {
+            padding: 0;
+            margin: 0;
+
+            a {
+                text-decoration: none;
+                color: #007bff;
+            }
+
+            a:hover {
+                color: #0056b3;
+            }
+        }
+    }
+}

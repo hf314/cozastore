@@ -27,5 +27,7 @@
     <a href=""><div class="back"></div></a>
 </div>
 
+{{--footer--}}
+@include('footer.footer')
 </body>
 </html>

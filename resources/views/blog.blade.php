@@ -24,5 +24,8 @@
     <div class="home">
         <h1>Blog</h1>
     </div>
+
+{{--footer--}}
+@include('footer.footer')
 </body>
 </html>
