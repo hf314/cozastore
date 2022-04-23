@@ -4,8 +4,6 @@ $n-f-links-visited: #b2b2b2;
 $n-f-links-hover: #6c7ae0;
 $nav-dark: #333333;
 
-
-
 @font-face {
     font-family: Poppins-Regular;
     src: url("../../public/fonts/Poppins-Regular.ttf");
@@ -16,13 +14,18 @@ $nav-dark: #333333;
     src: url("../../public/fonts/Poppins-Medium.ttf");
 }
 
+@font-face {
+    font-family: Poppins-Bold;
+    src: url("../../public/fonts/Poppins-Bold.ttf");
+}
+
 html, body {
     padding: 0;
     margin: 0;
 }
 
 .container {
-    padding: 0;
+    padding: 0 10px 0 10px;
     margin: auto;
     max-width: 1350px;
     height: max-content;
@@ -202,6 +205,129 @@ html, body {
         a .h-img:hover {
             background-image: url('/images/icons/icon-heart-blue.png');
         }
+    }
+}
+
+
+
+
+
+// ----- home.blade.php -----
+
+//home categories
+.home-c {
+    padding: 40px 0 50px 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 430px);
+    grid-column-gap: 30px;
+
+    h1 {
+        font-family: Poppins-Bold, sans-serif;
+        font-size: 28px;
+        color: $dark;
+        margin: 25px 0 10px 25px;
+        padding: 0;
+        transition: 0.4s all;
+    }
+
+    p {
+        font-family: Poppins-Regular, sans-serif;
+        font-size: 14px;
+        color: $dark;
+        margin: 0 0 0 25px;
+        padding: 0;
+        transition: 0.4s all;
+    }
+
+    h2 {
+        font-family: Poppins-Medium, sans-serif;
+        font-size: 15px;
+        color: #fff;
+        margin: 150px 0 0 25px;
+        padding: 0;
+        transition: 0.4s all;
+    }
+
+    .home-c-women {
+        width: 100%;
+        height: 300px;
+        padding: 0;
+        margin: 0;
+        background: url('/images/banner-01.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border: 1px #e6e6e6 solid;
+    }
+
+    .home-c-men {
+        width: 100%;
+        height: 300px;
+        padding: 0;
+        margin: 0;
+        background: url('/images/banner-02.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border: 1px #e6e6e6 solid;
+        transition: 0.4s all;
+    }
+
+    .home-c-accessories {
+        width: 100%;
+        height: 300px;
+        padding: 0;
+        margin: 0;
+        background: url('/images/banner-03.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border: 1px #e6e6e6 solid;
+        transition: 0.4s all;
+    }
+
+    .home-c-content {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    a {
+        display: inherit;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bg {
+        padding: 0;
+        margin: 0;
+        background-color: rgb(103, 117, 214);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.0;
+        transition: 0.4s all;
+    }
+
+    a:hover .bg {
+        opacity: 0.8;
+    }
+
+    a:hover h1,
+    a:hover p {
+        color: #fff;
     }
 }
 

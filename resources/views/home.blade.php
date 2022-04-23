@@ -24,6 +24,39 @@
 {{--content--}}
 <div class="container">
 
+{{--categories--}}
+    <div class="home-c">
+        <a href="#">
+            <div class="home-c-women">
+                <div class="bg"></div>
+                <div class="home-c-content">
+                    <h1>Women</h1>
+                    <p>Spring 2018</p>
+                    <h2>SHOP NOW</h2>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="home-c-men">
+                <div class="bg"></div>
+                <div class="home-c-content">
+                    <h1>Men</h1>
+                    <p>Spring 2018</p>
+                    <h2>SHOP NOW</h2>
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="home-c-accessories">
+                <div class="bg"></div>
+                <div class="home-c-content">
+                    <h1>Accessories</h1>
+                    <p>New Trend</p>
+                    <h2>SHOP NOW</h2>
+                </div>
+            </div>
+        </a>
+    </div>
 </div>
 
 {{--footer--}}
